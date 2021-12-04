@@ -11,7 +11,7 @@ export const Temperature = (props) => {
         .then(resp => {
             setTemperature(resp.data.temp);
         })
-            .catch(err => alert("temp " + err));
+            .catch(err => setTemperature(0.0));
        return temperature;
     }
     useEffect(() => {  
