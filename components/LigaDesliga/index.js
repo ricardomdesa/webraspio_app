@@ -14,7 +14,7 @@ export const LigaDesliga = (props) => {
     return (
         <StyledView>
             <StyledText>Ligar/Desligar Saida</StyledText>
-            <Switch style={[{alignItems: 'center', justifyContent: 'center'}]}
+            <Switch style={[{alignItems: 'center', justifyContent: 'center', transform: [{ scaleX: 1.5 }, { scaleY: 1.5 }]}]}
                 trackColor={{ false: "#767577", true: "#81b0ff" }}
                 thumbColor={isOn ? "green" : "#f4f3f4"}
                 ios_backgroundColor="#3e3e3e"
@@ -24,7 +24,6 @@ export const LigaDesliga = (props) => {
         </StyledView>
     )
   }
-
 
 const sendApi = (isOn) => {
     if (!isOn){
